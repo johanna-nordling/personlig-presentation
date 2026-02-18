@@ -2,121 +2,16 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsiv Flexbox-sida</title>
-
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Header */
-header {
-  background: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background: #444;
-}
-
-nav a {
-  color: white;
-  padding: 15px 20px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background: #666;
-}
-
-/* Main layout */
-.main-container {
-  display: flex;
-  flex: 1;
-  padding: 20px;
-  gap: 20px;
-}
-
-/* Content */
-.content {
-  flex: 3;
-  background: #f4f4f4;
-  padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-  flex: 1;
-  background: #ddd;
-  padding: 20px;
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-/* 📱 Responsiv del */
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sida 2</title>
 </head>
-
 <body>
 
-<header>
-  <h1>Min Responsiva Hemsida</h1>
-</header>
+    <h1>Detta är sida 2</h1>
+    <p>Du navigerade hit via länken.</p>
 
-<nav>
-  <a href="#">Hem</a>
-  <a href="#">Om oss</a>
-  <a href="#">Tjänster</a>
-  <a href="#">Kontakt</a>
-</nav>
-
-<div class="main-container">
-  <div class="content">
-    <h2>Huvudinnehåll</h2>
-    <p>Detta är huvudinnehållet. På stor skärm ligger sidebar bredvid.</p>
-  </div>
-
-  <div class="sidebar">
-    <h3>Sidebar</h3>
-    <p>Extra information här.</p>
-  </div>
-</div>
-
-<footer>
-  © 2026 Min Sida
-</footer>
+    <a href="sid1.html">Tillbaka till startsidan</a>
 
 </body>
 </html>
