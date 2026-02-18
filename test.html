@@ -47,4 +47,51 @@ nav a:hover {
 
 /* Huvuddel */
 .main {
-  display:
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Innehåll */
+.content {
+  flex: 1; /* Tar hela bredden nu */
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Flexbox utan Sidebar</h1>
+</header>
+
+<nav>
+  <a href="#">Hem</a>
+  <a href="#">Om</a>
+  <a href="#">Tjänster</a>
+  <a href="#">Kontakt</a>
+</nav>
+
+<div class="main">
+  <div class="content">
+    <h2>Huvudinnehåll</h2>
+    <p>Nu finns ingen sidebar. Innehållet tar hela bredden.</p>
+  </div>
+</div>
+
+<footer>
+  © 2026 Flexbox-exempel
+</footer>
+
+</body>
+</html>
