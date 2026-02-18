@@ -30,7 +30,7 @@ header {
 /* Navigation */
 nav {
   display: flex;
-  flex-wrap: wrap; /* Gör att länkar bryts automatiskt */
+  flex-wrap: wrap;
   justify-content: center;
   background: #444;
 }
@@ -47,65 +47,4 @@ nav a:hover {
 
 /* Huvuddel */
 .main {
-  display: flex;
-  flex-wrap: wrap; /* Viktig för responsivitet */
-  flex: 1;
-  padding: 20px;
-  gap: 20px;
-}
-
-/* Innehåll */
-.content {
-  flex: 3 1 300px; /* Växer, krymper, min-bredd */
-  background: #f4f4f4;
-  padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-  flex: 1 1 200px;
-  background: #ddd;
-  padding: 20px;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>Flexbox utan Media Queries</h1>
-</header>
-
-<nav>
-  <a href="#">Hem</a>
-  <a href="#">Om</a>
-  <a href="#">Tjänster</a>
-  <a href="#">Kontakt</a>
-</nav>
-
-<div class="main">
-  <div class="content">
-    <h2>Huvudinnehåll</h2>
-    <p>Denna sida använder bara Flexbox. Ingen Grid och inga media queries.</p>
-  </div>
-
-  <div class="sidebar">
-    <h3>Sidebar</h3>
-    <p>Den staplas automatiskt under innehållet när skärmen blir liten.</p>
-  </div>
-</div>
-
-<footer>
-  © 2026 Flexbox-exempel
-</footer>
-
-</body>
-</html>
+  display:
