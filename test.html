@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsiv Flexbox-sida</title>
+<title>Endast Flexbox</title>
 
 <style>
 * {
@@ -13,6 +13,7 @@
   font-family: Arial, sans-serif;
 }
 
+/* Hela sidan är en flex-container */
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +22,7 @@ body {
 
 /* Header */
 header {
-  background: #333;
+  background: #222;
   color: white;
   padding: 20px;
   text-align: center;
@@ -44,15 +45,15 @@ nav a:hover {
   background: #666;
 }
 
-/* Main layout */
-.main-container {
+/* Huvuddel */
+.main {
   display: flex;
   flex: 1;
   padding: 20px;
   gap: 20px;
 }
 
-/* Content */
+/* Innehåll */
 .content {
   flex: 3;
   background: #f4f4f4;
@@ -68,21 +69,21 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background: #333;
+  background: #222;
   color: white;
   text-align: center;
   padding: 15px;
 }
 
-/* 📱 Responsiv del */
+/* Responsiv del */
 @media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-  }
-
   nav {
     flex-direction: column;
     align-items: center;
+  }
+
+  .main {
+    flex-direction: column;
   }
 }
 </style>
@@ -91,20 +92,20 @@ footer {
 <body>
 
 <header>
-  <h1>Min Responsiva Hemsida</h1>
+  <h1>Min Flexbox-hemsida</h1>
 </header>
 
 <nav>
   <a href="#">Hem</a>
-  <a href="#">Om oss</a>
+  <a href="#">Om</a>
   <a href="#">Tjänster</a>
   <a href="#">Kontakt</a>
 </nav>
 
-<div class="main-container">
+<div class="main">
   <div class="content">
     <h2>Huvudinnehåll</h2>
-    <p>Detta är huvudinnehållet. På stor skärm ligger sidebar bredvid.</p>
+    <p>Denna sida är byggd helt med Flexbox.</p>
   </div>
 
   <div class="sidebar">
@@ -114,7 +115,7 @@ footer {
 </div>
 
 <footer>
-  © 2026 Min Sida
+  © 2026 Flexbox-sida
 </footer>
 
 </body>
